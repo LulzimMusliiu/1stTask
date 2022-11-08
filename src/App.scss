@@ -1,0 +1,105 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+:root {
+    --blue: #0870f8;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html,
+body,
+.full-width {
+    height: 100%;
+}
+
+body, html {
+        margin: 0;
+        padding: 0;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+    height: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+label {
+    margin: 0;
+}
+
+.list_items-wrapper {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.list_item {
+  display: flex;
+  max-width: 320px;
+  min-width: 250px;
+  padding: 0 8px;
+}
+
+.list_icon-wrapper {
+  flex: none;
+}
+.list_icon {
+  --size: 70px;
+  width: var(--size, 60px);
+  height: var(--size, 60px);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0,0,0, .1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  svg {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.list_information{
+  margin-left: 15px;
+}
+.list_information-title {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.list_information-description {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+}
